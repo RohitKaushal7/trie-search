@@ -5,11 +5,20 @@ using namespace std;
 
 int main()
 {
-    hello();
+    Trie T;
 
     for (string word : get_array_from_file("../data/words.txt"))
     {
-        cout << word << "\n";
+        // cout << word << "\n";
+        T.insert(word);
+    }
+
+    cout << T.search_exact("google") << "\n";
+    cout << T.search_exact("Abra") << "\n"; //
+
+    for (string w : T.search_pre("go"))
+    {
+        cout << w << "\n";
     }
 
     return 0;
