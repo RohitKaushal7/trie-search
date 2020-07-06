@@ -1,0 +1,5 @@
+apple
+samsung
+google
+amazon
+flipkart
