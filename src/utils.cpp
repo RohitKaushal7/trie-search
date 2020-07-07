@@ -16,7 +16,7 @@ vector<string> get_array_from_file(string src)
 
     while (!file.eof())
     {
-        file >> word;
+        getline(file, word);
         if (word.size())
             words.push_back(word);
         word = "\0";

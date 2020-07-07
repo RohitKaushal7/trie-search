@@ -12,5 +12,8 @@ all:
 
 cmp: 
 	g++ ./src/main.cpp -o build/Trie_Search
-	
+
+run: 
+	cd build && ./Trie_Search
+
 .PHONY : all

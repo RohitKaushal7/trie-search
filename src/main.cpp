@@ -3,23 +3,30 @@
 #include "utils.cpp"
 using namespace std;
 
+void test();
+
 int main()
 {
+    // test();
+
     Trie T;
 
-    for (string word : get_array_from_file("../data/words.txt"))
+    for (string word : get_array_from_file("../data/movies.txt"))
     {
         // cout << word << "\n";
         T.insert(word);
     }
 
-    cout << T.search_exact("google") << "\n";
-    cout << T.search_exact("Abra") << "\n"; //
-
-    for (string w : T.search_pre("go"))
+    for (string w : T.search_pre("The Big"))
     {
         cout << w << "\n";
     }
 
+    // T.draw(NULL);
+
     return 0;
+}
+
+void test()
+{
 }
