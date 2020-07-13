@@ -58,6 +58,7 @@ TrieNode *Trie::search_exact(string str)
 {
     TrieNode *current = root;
 
+    auto start = chrono::high_resolution_clock::now();
     for (int i = 0; i < str.size(); ++i)
     {
         char ch = str[i];
@@ -70,6 +71,10 @@ TrieNode *Trie::search_exact(string str)
             return NULL;
         }
     }
+    auto stop = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::nanoseconds>(stop - start);
+    cerr << "\033[32m\n"
+         << current->isEndOfWord << " results in " << double(duration.count() / double(1000000)) << " ms.\033[0m\n\n";
 
     return current->isEndOfWord ? current : NULL;
 }
