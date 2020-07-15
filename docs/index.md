@@ -22,3 +22,11 @@ Unlike a binary search tree, no node in the tree stores the key associated with 
 > Search : O(m)    :  m is the length of string. <br>
 >
 > Space Complexity : O(n*m)     :  n = number of string , m = avg length of strings
+
+# Run the project (linux)
+    - in the root directory of the project run 
+        - `make` : it will compile the project and produce the executable in `build/Trie_Search`
+    - execute the executable directly. OR `make run` in the root directory.
+        - data files are stored in `data/` directory which consist of string units each in different line.
+        - choose the file to load in trie data structure.
+        - search for keywords.   

@@ -28,6 +28,8 @@ int main()
 
     do
     {
+
+        cout << "------------------------\n";
         cout << "MENU\n";
         cout << "1. Exact Search.\n";
         cout << "2. Prefix Search.\n";
@@ -35,13 +37,14 @@ int main()
         cout << "0. Exit.\n";
 
         cin >> choice;
+        getchar(); // get the new line character
 
         string pattern;
 
         if (choice)
         {
-            cout << "Enter Search Text : ";
-            cin >> pattern;
+            cout << "Enter Search Text (eg. The Go) : ";
+            getline(cin, pattern);
         }
 
         switch (choice)
@@ -74,7 +77,8 @@ int main()
             break;
         }
 
-        cin >> filename;
+        cout << "\n\npress any key to continue.";
+        getchar();
         system("clear");
 
     } while (choice);
