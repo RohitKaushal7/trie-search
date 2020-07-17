@@ -9,7 +9,7 @@ int main()
 {
 
     string filename;
-    cout << "Enter File name to load data from. ( movies | words ) :\n";
+    cout << "Enter File name to load data from. ( music | movies | words ) :\n";
     cin >> filename;
 
     Trie T;
@@ -43,7 +43,7 @@ int main()
 
         if (choice)
         {
-            cout << "Enter Search Text (eg. The Go) : ";
+            cout << "Enter Search Text (leave empty to list all) : ";
             getline(cin, pattern);
         }
 
