@@ -19,7 +19,7 @@ Unlike a binary search tree, no node in the tree stores the key associated with 
 **Complexities**
 > Insert : O(m)    : m is the length of string. <br>
 > Delete : O(m)    : m is the length of string. <br>
-> Search : O(m)    :  m is the length of string. <br>
+> Search : O(m)    : m is the length of string. <br>
 >
 > Space Complexity : O(n*m)     :  n = number of string , m = avg length of strings
 
