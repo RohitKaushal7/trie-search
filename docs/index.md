@@ -31,3 +31,12 @@ Unlike a binary search tree, no node in the tree stores the key associated with 
 - execute the executable directly. OR `make run` in the root directory.
     - choose the file to load in trie data structure.
     - search for keywords.
+
+## Run the project (win)
+- Compile the file `src/main.cpp` in windows to produce the executable and then run the executable.
+
+# Example
+### Universal Search
+![](./images/uni-search.png)
+### Prefix Search 
+![](./images/pre-search.png)
