@@ -1,7 +1,5 @@
-apple
-samsung
+grapes
+gems
 google
-amazon
-flipkart
 good
-gobble head
+gobble

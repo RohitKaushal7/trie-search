@@ -10,7 +10,7 @@ vector<string> get_array_from_file(string src)
 
     if (!file)
     {
-        cerr << "\nCan't Open File. Some Error Occurred.!\n";
+        cerr << "\nCan't Open File " << src << " Some Error Occurred.!\n";
         return words;
     }
 

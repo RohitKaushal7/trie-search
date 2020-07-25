@@ -5,26 +5,46 @@ using namespace std;
 
 void test();
 
-int main()
+int main(int argc, char **argv)
 {
 
     string filename;
-    cout << "Enter File name to load data from. ( music | movies | words ) :\n";
-    cin >> filename;
-
     Trie T;
+    vector<string> data;
 
-    cerr << "loading ...";
-    vector<string> data = get_array_from_file("../data/" + filename + ".txt");
+    // if File provided in Arguments.
+    if (argc > 1)
+    {
+        filename = argv[1];
+        data = get_array_from_file(filename);
+    }
+    else
+    {
+        cout << "Enter File name to load data from. ( music | movies | words ) :\n";
+        cin >> filename;
+        cerr << "loading ...";
+        data = get_array_from_file("../data/" + filename + ".txt");
+        cerr << "Done.\n";
+    }
+
     for (string word : data)
     {
         // cout << word << "\n";
         T.insert(word);
     }
 
-    cerr << "Done.\n";
-
     int choice;
+
+    // If pattern in Arguments.
+    if (argc > 2)
+    {
+        string pattern = argv[2];
+        for (string w : search(data, pattern))
+        {
+            cout << w << "\n";
+        }
+        return 0;
+    }
 
     do
     {

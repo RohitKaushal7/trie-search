@@ -11,6 +11,10 @@ A little Search Engine implementation using Trie Data Structure.
 - make run
     Runs the already build code without compiling.
 
+### Manual (trie-search)
+- `./trie-search`
+- `./trie-search [path_to_file]`
+- `./trie-search [path_to_file] [pattern_to_search]`
 ---
 
 ---

@@ -8,12 +8,12 @@ default_target: all
 
 # The main all target
 all: 
-	mkdir -p build && g++ ./src/main.cpp -o build/Trie_Search && cd build && ./Trie_Search
+	mkdir -p build && g++ ./src/main.cpp -o build/trie-search && cd build && ./trie-search
 
 cmp: 
-	g++ ./src/main.cpp -o build/Trie_Search
+	g++ ./src/main.cpp -o build/trie-search
 
 run: 
-	cd build && ./Trie_Search
+	cd build && ./trie-search
 
 .PHONY : all
