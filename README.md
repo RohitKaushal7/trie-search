@@ -17,7 +17,6 @@ A little Search Engine implementation using Trie Data Structure.
 - `./trie-search [path_to_file] [pattern_to_search]`
 ---
 
----
 #  Trie
 In computer science, a trie, also called digital tree or prefix tree, is a kind of search tree—an ordered tree data structure used to store a dynamic set or associative array where the keys are usually strings.
 
@@ -57,3 +56,10 @@ Unlike a binary search tree, no node in the tree stores the key associated with 
 ![](./docs/images/uni-search.png)
 ### Prefix Search 
 ![](./docs/images/pre-search.png)
+
+## Contributors
+
+- [Rohit Kaushal](https://www.github.com/RohitKaushal7) <br>
+- [Nishit Attrey](https://www.github.com/NishitAttrey) <br>
+- [Vishal Shrivastava](https://www.github.com/vishalshrivastava16) <br>
+
