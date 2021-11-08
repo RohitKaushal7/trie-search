@@ -158,7 +158,7 @@ bool Trie::_remove(TrieNode *current, string str, int index)
     bool shouldDeleteCurrentNode = _remove(current->children[ch], str, index + 1);
 
     // after recursion
-    if (shouldDeleteCurrentNode)
+    if (shouldDeleteCurrentNode&&!current->childeren[ch]->isEndOfWord)
     {
         current->children.erase(ch);
         return current->children.size() == 0; // true ?
